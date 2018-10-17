@@ -7,19 +7,19 @@ Your goal in this lab is to create a thorough CRUD interface for one model, the
 
 Songs have the following attributes and limitations:
 
-- `title`, a `string`
-  - Must not be blank
+d- `title`, a `string`
+  d- Must not be blank
   - Cannot be repeated by the same artist in the same year
-- `released`, a `boolean` describing whether the song was ever officially
+d- `released`, a `boolean` describing whether the song was ever officially
   released.
-  - Must be `true` or `false`
-- `release_year`, an `integer`
+  d - Must be `true` or `false`
+d- `release_year`, an `integer`
   - Optional if `released` is `false`
   - Must not be blank if `released` is `true`
-  - Must be less than or equal to the current year
-- `artist_name`, a `string`
-  - Must not be blank
-- `genre`, a `string`
+  m - Must be less than or equal to the current year
+d- `artist_name`, a `string`
+  d- Must not be blank
+d- `genre`, a `string`
 
 ## Requirements
 
@@ -29,7 +29,7 @@ Use the `resource` generator, **not** the `scaffold` generator
 
 2.  Define all RESTful routes for songs
 
-3.  Build views that connect to each other using route helpers. 
+3.  Build views that connect to each other using route helpers.
 
 4.  Use `form_for` to build forms with pre-fill and error list features. (_Hint:
     Try using a partial to cut down on copy/pasting!_)

@@ -1,0 +1,21 @@
+<!-- <h1>Editing <%= @song.title %> by <%= @song.artist_name %></h1>
+<%= form_for @song do |f| %>
+  <label>Song title:</label><br>
+  <%= f.text_field :title %><br>
+
+  <label>Song Release Year:</label><br>
+  <%= f.text_area :release_year %><br>
+
+  <label>Released:</label><br>
+  <%= f.text_area :released %><br>
+
+  <label>Genre:</label><br>
+  <%= f.text_area :genre %><br>
+
+  <label>Artist Name:</label><br>
+  <%= f.text_area :artist_name %><br>
+
+  <%= f.submit %>
+<% end %> -->
+<%= render 'form' %>
+<%= link_to 'Cancel Editing', @song %>
