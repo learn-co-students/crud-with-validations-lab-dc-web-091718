@@ -1,0 +1,15 @@
+<h1>Songs#edit</h1>
+<%= form_for @song, method: :patch do |t|%>
+		<%= t.label :title    %>
+		<%= t.text_field :title	%>
+		<%= t.label :artist_name    %>
+		<%= t.text_field :artist_name	%>
+		<%= t.label :released   %>
+		<%= t.check_box :released	%>
+		<%= t.label :release_year   %>
+		<%= t.text_field :release_year	%>
+		<%= t.label :genre    %>
+		<%= t.text_field :genre	%>
+
+		<%= t.submit %>
+<% end %>
